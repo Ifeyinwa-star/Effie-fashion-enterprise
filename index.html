@@ -3,9 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Effie Fashion Enterprise</title>
+    <style>
+        body {
+            background-color: #fff; /* white background */
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .site-title {
+            text-align: left;
+            color: #ffc9c9; /* light pink text */
+            font-size: 2.1em;
+            font-weight: bold;
+            margin: 40px 0 10px 40px;/* add left margin  for spacing */
+        }
+        nav-bar {
+            display: flex;
+            align-items: center;
+             justify-content: space-between; 
+             width: 100%;
+            margin-left: 0 40px 0 40px;
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+        .nav-links {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;/* Equal space between links*/
+            flex: 1;
+        }
+        .nav-link {
+            font-size: 1.2em;
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .nav-link:hover {
+             background: #ffc9c9;
+            color: #fff;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-left: auto; /* Push search box to the right */
+        }
+        .search-input {
+            padding: 6px 12px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-btn {
+            padding: 6px 16px;
+            font-size: 1em;
+            background: #ffc9c9;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+             transition: background 0.2s;
+        }
+        .search-btn:hover {
+            background: #ffb6b6;
+        }
+        .banner-container {
+            display: flex;
+            width: 100%;
+            height: 50vh;/* half the viewport height */
+            overflow: hidden;
+        }
+        .banner-image {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+      
+    </style>
+    <!-- ...existing code... -->
 </head>
 <body>
-   <h2>Effie-Fashion-Enterprise</h2> 
+    <h1 class="site-title">Effie-Fashion-Enterprise</h1>
+    <div class="nav-bar">
+        <div class="nav-links">
+            <a href="#" class="nav-link">Home Page</a>
+            <a href="#" class="nav-link">New Arrivals</a>
+            <a href="#" class="nav-link" title="Add to cart">
+                Add to cart
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#333" viewBox="0 0 24 24">
+                    <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-12.016-2l1.72-7h13.296l1.72 7h-16.736zm15.016-9v2h-16v-2h2.016l1.72-7h8.528l1.72 7h2.016z"/>
+                </svg>
+            </a>
+            <a href="#" class="nav-link">Login</a>
+        </div>
+        <form class="search-box" action="#" method="get" onsubmit="return false;">
+            <input type="text" class="search-input" placeholder="Search...">
+            <button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+    <div class="banner-container">
+    <img src="https://images.unsplash.com/photo-1615222443417-6d76586644a9?q=80&w=705&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner 1" class="banner-image">
+    <img src="https://images.unsplash.com/photo-1649650892732-3563cd59dfb2?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner 2" class="banner-image">
+    </div>      
 </body>
 </html>
