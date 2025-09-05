@@ -6,19 +6,25 @@
     <title>Effie Fashion Enterprise</title>
     <style>
         body {
-            background-color: #fff; /* white background */
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <style>
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
         .site-title {
             text-align: left;
-            color: #ffc9c9; /* light pink text */
-            font-size: 2.1em;
+            color: palevioletred;
+            font-size: 2.5em;
             font-weight: bold;
-            margin: 40px 0 10px 40px;/* add left margin  for spacing */
+            margin: 40px 0 10px 40px;
         }
-        nav-bar {
+        .nav-bar {
             display: flex;
             align-items: center;
              justify-content: space-between; 
@@ -30,7 +36,7 @@
         .nav-links {
             display: flex;
             flex-direction: row;
-            gap: 40px;/* Equal space between links*/
+            gap: 40px;
             flex: 1;
         }
         .nav-link {
@@ -53,7 +59,7 @@
             display: flex;
             align-items: center;
             gap: 8px;
-            margin-left: auto; /* Push search box to the right */
+            margin-left: auto; 
         }
         .search-input {
             padding: 6px 12px;
@@ -77,18 +83,17 @@
         .banner-container {
             display: flex;
             width: 100%;
-            height: 50vh;/* half the viewport height */
+            height: 50vh;
             overflow: hidden;
         }
         .banner-image {
             width: 50%;
-            height: 100%;
+            height: 800px;
             object-fit: cover;
             display: block;
         }
       
     </style>
-    <!-- ...existing code... -->
 </head>
 <body>
     <h1 class="site-title">Effie-Fashion-Enterprise</h1>
@@ -113,8 +118,299 @@
     <img src="https://images.unsplash.com/photo-1615222443417-6d76586644a9?q=80&w=705&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner 1" class="banner-image">
     <img src="https://images.unsplash.com/photo-1649650892732-3563cd59dfb2?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner 2" class="banner-image">
     </div>
-    <div class="front-page-text"style="margin: 40px auto; max-width: 700px; font-size: 1.4em; color: #333; text-align: justify;">
-        Clothing has always been more than just fabric stitched together—it is a language, a declaration, a mirror of who we are and who we aspire to be. Whether in a sharply tailored suit or a flowing dress that commands attention, what we wear communicates before we ever speak. For men and women alike, fashion is not simply about trends; it is about identity, confidence, and the subtle art of self-expression.
+    <div class="front-page-intro">
+    Clothing has always been more than just fabric stitched together—it is a language, a declaration, a mirror of who we are and who we aspire to be. Whether in a sharply tailored suit or a flowing dress that commands attention, what we wear communicates before we ever speak. For men and women alike, fashion is not simply about trends; it is about identity, confidence, and the subtle art of self-expression. Fashion is not about gender; it is about the bold choice to reveal the best version of ourselves, one outfit at a time.
+</div>
+
+<style>
+.front-page-intro {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 32px 5vw 24px 5vw;
+    font-size: 1.5em;
+    color: #333;
+    text-align: justify;
+    font-style: italic;
+    background: lightblue;
+    margin: 0 auto 20px auto;
+}
+</style>
+<div class="flex">
+    <div class="flex-just-around">
+        <a href="#" class="card">
+            <img src="https://images.unsplash.com/photo-1618244972963-dbee1a7edc95?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Woman fashion" class="card-image">
+        <div class="card-label">Women's collections</div>
+        </a>
     </div>
+
+    <style>
+    .cards-row-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+    padding: 12px;
+    width: 320px;
+}
+.card:hover {
+    box-shadow: 0 4px 24px rgba(255,201,201,0.3);
+    transform: translateY(-4px) scale(1.03);
+}
+.card-image {
+    border-radius:1px; 
+    border: 0.5px solid #eee; 
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+}
+.card-image-small {
+    width: 100px;
+    height: 70px;
+}
+.card-label {
+    margin-top: 14px;
+    background: #ffc9c9;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+    </style>
+<div class="flex-just-around">
+    <a href="#" class="card">
+        <img src="https://images.unsplash.com/photo-1732613842479-4ff0c5031f25?q=80&w=736&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fashion accessories" class="card-image">
+        <div class="card-label">Accessories</div>
+    </a>
+</div>
+
+<style>
+.cards-column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+    padding: 12px;
+    width: 320px;
+}
+.card:hover {
+    box-shadow: 0 4px 24px rgba(255,201,201,0.3);
+    transform: translateY(-4px) scale(1.03);
+}
+.card-image-small{
+     border-radius:1px;
+    border: 0.5px solid #eee; 
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+}
+.card-label {
+    margin-top: 14px;
+    background: #ffc9c9;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+</style>
+<div class="flex-just-around">
+    <a href="#" class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1688497830977-f9ab9f958ca7?q=80&w=1051&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Men's fashion" class="card-image">
+        <div class="card-label">Men's collections</div>
+    </a>
+</div>
+</div>
+<style>
+.cards-column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+    padding: 12px;
+    width: 320px;
+}
+.card:hover {
+    box-shadow: 0 4px 24px rgba(255,201,201,0.3);
+    transform: translateY(-4px) scale(1.03);
+}
+.card-image-small{
+     border-radius:1px; 
+    border: 0.5px solid #eee; 
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    display: block;
+}
+.card-label {
+    margin-top: 14px;
+    background: #ffc9c9;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-align: center;
+}
+</style>
+<div class="flex">
+     <div class="footer-section quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="footer-section payment-icons">
+        <h4>Payments</h4>
+        <div class="icons">
+            <img src="https://images.unsplash.com/photo-1653389527286-604ab2dd2471?q=80&w=1162&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Visa" class="pay-icon">
+            <img src="https://cdn.dribbble.com/userupload/12771096/file/original-1b0d976c8eff11845b9ccd6912f12d71.png?resize=1504x1128&vertical=center" alt="MasterCard" class="pay-icon">
+            <img src="https://images.unsplash.com/photo-1641350625112-3b1d73c71418?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="PayPal" class="pay-icon">
+            <img src="https://images.unsplash.com/photo-1668904049173-3d3cd59e13d6?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Apple Pay" class="pay-icon apple">
+        </div>
+    </div>
+    <div class="footer-section social-icons">
+        <h4>Follow Us</h4>
+        <div class="icons">
+            <a href="#" title="Instagram">
+                <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Instagram" class="social-icon">
+            </a>
+            <a href="#" title="Facebook">
+                <img src="https://images.unsplash.com/photo-1684577088653-f14e310d841b?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Facebook" class="social-icon">
+            </a>
+            <a href="#" title="Whatsapp">
+                <img src="https://images.unsplash.com/photo-1658497082000-b8c4d46addc9?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Whatsapp" class="social-icon">
+            </a>
+        </div>
+    </div>
+</footer>
+
+<style>
+.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #222;
+    color: #fff;
+    padding: 40px 5vw 20px 5vw;
+    margin-top: 60px;
+    gap: 32px;
+}
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 180px;
+    margin-bottom: 20px;
+}
+.footer-section h4 {
+    margin-bottom: 16px;
+    color: palevioletred;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+.footer-section ul li a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-section ul li a:hover {
+    color: darkblue;
+}
+.payment-icons .icons,
+.social-icons .icons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.pay-icon {
+    height: 70px;
+    width: auto;
+    background: blue;
+    border-radius: 20%;
+    padding: 2px 6px;
+    object-fit: contain;
+}
+.pay-icon.apple {
+    background: none;
+    padding: 0;
+    height: 70px;
+    filter: invert(1);
+}
+.social-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 70%;
+    background: #fff;
+    object-fit: cover;
+    transition: filter 0.2s;
+}
+.social-icon:hover {
+    filter: brightness(0.7) sepia(1) hue-rotate(-30deg) saturate(4);
+}
+@media (max-width: 800px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+}
+</style>
+</div>
 </body>
 </html>
